@@ -14,20 +14,31 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "useNextNotificationsApi": true,
+      "config": {
+        "googleMaps": {
+          "android.config.googleMaps.apicKey": "AIzaSyB-_BltDGPaZMJbK9yqJr_7nGkTlGlFPpI"
+        }
+      },
+
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "it.Oran.sosCallingOut"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4b1eae1c-3e0b-4766-b253-56abbb5df75b"
+      }
     }
   }
 }
